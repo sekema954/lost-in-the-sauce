@@ -5,29 +5,94 @@
     box-sizing: border-box;
 }
 
-.container{
-    max-width: 100%;
-    height: 100vh;
-    background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
-}
-
-.sliding-header{
-    height: 30px;
-    background-color: orange;
-    color: white;
-    display: flex;
-    overflow: hidden;
-}
-
 
 .navbar{
     width: 100%;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px 0 10px;
-    position: fixed;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    padding: 5px 20px 0 20px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}
+
+@media(max-width:892px){
+    .navbar .mylinks, .right-nav-wrapper{
+        display: none;
+    }
+}
+
+/***dropdown menu***/
+
+.dropdown{
+    width: 100%;
+    height: 0;
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    transition: all .50s;
+}
+
+.changeHeight{
+    height: 250px;
+}
+
+.dropdown .drop-list{
+    text-align: center;
+    display: none;
+}
+
+.show-list{
+    display: inline-block !important;
+}
+
+.dropdown ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+.dropdown ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .50s;
+}
+
+.dropdown ul li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+.dropdown-wrapper>div{
+    margin: 10px;
+}
+
+.dropdown .shopping-cart{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.dropdown button{
+    height: 30px;
+    background-color: orange;
+    width: 150px;
+    border: solid white 1px;
+    border-radius: 30px;
+    transition: all .50s;
+}
+
+.dropdown button:hover{
+    background-color: orangered;
+}
+
+.logo-icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
 }
 
 .navbar ul li{
@@ -37,261 +102,182 @@
 
 .navbar ul li a{
     text-decoration: none;
+    margin: 15px;
     color: white;
-    margin: 10px;
-    font-size: 25px;
-    font-weight: 600;
+    cursor: pointer;
+    transition: all .50s;
 }
 
-.logo-icon img{
-    width: 50px;
-    height: 50px;
+.navbar ul li a:hover, .navbar .fa:hover{
+    color: orange;
+}
+
+.right-nav-wrapper>div{
+    display: inline-block;
+    margin: 15px;
+}
+
+.order-btn{
+    cursor: pointer;
+    width: 170px;
+    height: 45px;
+    background-color: orange;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all .50s;
+}
+
+.order-btn:hover{
+    background-color: orangered;
+}
+
+.navbar .fa{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all .50s;
 }
 
 .menubar{
     cursor: pointer;
-    display: none;
-}
-
-
-@media(max-width:587px){
-    .menubar{
-        display: inline-block;
-    }
-
-    .navbar ul li a{
-        display: none;
-    }
 }
 
 .bar{
-    width: 37px;
-    height: 4px;
-    background-color: orangered;
-    margin: 7px;
+    width: 30px;
+    height: 5px;
+    background-color: wheat;
+    margin: 4px;
     transition: all .50s;
 }
 
 .change .bar1{
-    transform: translate(0, 11px) rotate(-50deg);
+    transform: translate(0, 9px)rotate(45deg);
 }
 
 .change .bar2{
-    opacity: 0;
+    animation: fadeout 1s;
+    transition: all .50s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout{
+    0%{transform: translateX(-10px);}
+    100%{opacity: 0;
+        transform: translateX(10px);
+    }
 }
 
 .change .bar3{
-    transform: translate(0, -11px) rotate(50deg);
-}
-
-
-.dropdown-menu{
-    width: 100%;
-    height: 0;
-    margin-top: 53px;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
-    transition: all .50s;
-}
-
-.changeHieght{
-    height: 250px;
-}
-
-.dropdown-menu li{
-    list-style: none;
-    margin: 10px;
-
-}
-
-.dropdown-menu ul li a{
-    color: white;
-    text-decoration: none;
-    font-weight: 900;
-    font-size: 25px;
-    transition: all .50s;
-}
-
-.dropdown-menu ul li a:hover{
-    background-color: orange;
-}
-
-
-.mylist{
-    opacity: 0;
-    display: none;
-    transition: all .60s;
-
-}
-
-.showlist{
-    opacity: 1;
-    display: block;
+    transform: translate(0, -9px)rotate(-45deg);
 }
 
 
 
-/****HOME***/
+
+/***home section***/
 #home{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/home-bg.jpeg);
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    
+}
+
+.home-pg-bg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/home-bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 20px 0 20px;
+    color: white;
 }
 
 .home-wrapper>div{
-    margin: 15px;
+    margin: 20px;
+    text-align: center;
 }
 
-
-.home-title h1{
-    color: white;
+.home-pg-title h1{
     font-size: 50px;
-    font-weight: 800;
-    text-align: center;
-    text-shadow:
-    0 0 1px black, 
-    0 0 1px black, 
-    0 0 1px black, 
-    0 0 1px black, 
-    0 0 1px black, 
-    0 0 1px black, 
-    0 0 1px black, 
-    0 0 1px black, 
-    0 0 1px black, 
-    4px 3px 2px orange;
-    animation: slideIn 2s; 
-    animation-fill-mode: forwards;
-    -moz-animation: slideIn 2s;
-    -o-animation: slideIn 2s;
-    -webkit-animation: slideIn 2s;
-}
-
-@keyframes slideIn {
-    0%{transform: translateY(-300px);
-        opacity: 0;
-    }
-
-    50%{opacity: .50;}
-
-    100%{opacity: 1;}
-}
-
-
-@-webkit-keyframes slideIn {
-    0%{transform: translateY(-300px);
-        opacity: 0;
-    }
-
-    50%{opacity: .50;}
-
-    100%{opacity: 1;}
-}
-
-@-moz-keyframes slideIn {
-    0%{transform: translateY(-300px);
-        opacity: 0;
-    }
-
-    50%{opacity: .50;}
-
-    100%{opacity: 1;}
-}
-
-@-o-keyframes slideIn {
-    0%{transform: translateY(-300px);
-        opacity: 0;
-    }
-
-    50%{opacity: .50;}
-
-    100%{opacity: 1;}
-}
-
-
-
-
-.home-content p{
-    opacity: 0;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    animation: slide-left 2s;
-    animation-delay: .90s;
-    animation-fill-mode: forwards;
-}
-
-
-
-@keyframes slide-left {
-    0%{transform: translateX(-200px);
-        opacity: 0;
-    }
-
-    50%{opacity: .50;}
-
-    100%{opacity: 1;}
-}
-
-
-@-webkit-keyframes slide-left {
-    0%{transform: translateY(-300px);
-        opacity: 0;
-    }
-
-    50%{opacity: .50;}
-
-    100%{opacity: 1;}
-}
-
-@-moz-keyframes slide-left {
-    0%{transform: translateX(-200px);
-        opacity: 0;
-    }
-
-    50%{opacity: .50;}
-
-    100%{opacity: 1;}
-}
-
-@-o-keyframes slide-left {
-    0%{transform: translateX(-200px);
-        opacity: 0;
-    }
-
-    50%{opacity: .50;}
-
-    100%{opacity: 1;}
-}
-
-.order-btn{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px !important;
-}
-
-.order-btn button{
-    opacity: 0;
-    width: 200px;
-    height: 45px;
-    cursor: pointer;
-    background-color: orange;
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 10px;
     transition: all .50s;
-    animation: slide-left 2s;
-    animation-delay: 2s;
+    animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
     animation-fill-mode: forwards;
 }
 
-.order-btn button:hover{
-    box-shadow: 6px 6px orangered;
-    background-color: darkorange;
-    color: white;
+/***fadeIn animation***/
+
+@keyframes fadeIn{
+   0%{transform: translateX(-100px);
+    opacity: 0;}
 }
 
+
+@-webkit-keyframes fadeIn{
+    0%{transform: translateX(-100px);
+        opacity: 0;}
+}
+
+@-o-keyframes fadeIn{
+    0%{transform: translateX(-100px);
+        opacity: 0;}
+}
+
+@-moz-keyframes fadeIn{
+    0%{transform: translateX(-100px);
+        opacity: 0;}
+}
+
+
+.home-pg-content p{
+    font-size: 20px;
+    opacity: 0;
+    animation: appearIn 1s;
+    -moz-animation: appearIn 2s;
+    -o-animation: appearIn 2s;
+    -webkit-animation: appearIn 2s;
+    animation-fill-mode: forwards;
+    animation-delay: .50s;
+}
+
+/***appearIn animation***/
+@keyframes appearIn {
+    0%{transform: translateX(-100px);
+        opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-webkit-keyframes appearIn{
+    0%{transform: translateX(-100px);
+        opacity: 0;}
+    100%{opacity: 1;}
+
+}
+
+@-moz-keyframes appearIn{
+    0%{transform: translateX(-100px);
+        opacity: 0;}
+    100%{opacity: 1;}
+
+}
+
+@-o-keyframes appearIn{
+    0%{transform: translateX(-100px);
+        opacity: 0;}
+    100%{opacity: 1;}
+
+}
+
+
+.order-now-btn button{
+    animation: slideIn 2s forwards;
+}

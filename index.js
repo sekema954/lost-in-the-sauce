@@ -2,12 +2,12 @@
 menuClicked();
 function menuClicked(){
     const menubar = document.querySelector(".menubar");
-    const dropdownDiv = document.querySelector(".dropdown-menu");
-    const mylist = document.querySelector(".mylist");
+    const dropdownDiv = document.querySelector(".dropdown");
+    const mylist = document.querySelector(".drop-list");
     menubar.addEventListener("click", ()=>{
         menubar.classList.toggle("change");
-        dropdownDiv.classList.toggle("changeHieght");
-        mylist.classList.toggle("showlist");
+        dropdownDiv.classList.toggle("changeHeight");
+        mylist.classList.toggle("show-list");
     })
 }
 
