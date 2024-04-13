@@ -1,8 +1,16 @@
+/***cursive font***/
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+/**main font***/
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Quicksand:wght@300..700&display=swap');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 
@@ -112,6 +120,10 @@
     color: orange;
 }
 
+.right-nav-wrapper{
+    margin-top: 25px;
+}
+
 .right-nav-wrapper>div{
     display: inline-block;
     margin: 15px;
@@ -188,7 +200,7 @@
 .home-pg-bg{
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/home-bg.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/home-bg.avif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -205,7 +217,21 @@
 }
 
 .home-pg-title h1{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 900;
+    font-style: normal;
     font-size: 50px;
+    text-shadow: 
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    0 0 1px black,
+    4px 4px 4px orangered;
     transition: all .50s;
     animation: fadeIn 2s;
     -moz-animation: fadeIn 2s;
@@ -279,5 +305,132 @@
 
 
 .order-now-btn button{
-    animation: slideIn 2s forwards;
+    animation: appearIn 2s forwards;
+    -moz-animation: forwards 2s;
+    -o-animation: appearIn 2s;
+    -webkit-animation: appearIn 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+
+/***menu-section***/
+
+#menu{
+    width: 100%;
+    height: 100vh;
+    color: black;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-title{
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu-title h1{
+    font-family: "Cedarville Cursive", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.menu-wrapper li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.clicked .menu-wrapper{
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+    width: 75px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.menu-options{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media(max-width:764px){
+    .menu-items-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media(max-width:502px){
+    .menu-items-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 20px;
+    }
+}
+
+
+
+.item{
+    width: 240px;
+    border: solid black;
+}
+
+.item-description{
+    text-align: left;
+    padding: 10px 10px 0 10px;
+}
+
+.item-img{
+    width: 100%;
+    height: 200px;
+    background-color: white !important;
+    border-bottom-left-radius: 40px;
+}
+
+.item-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.prize-cart{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 10px 10px;
+    margin-top: 50px;
+}
+
+
+.item-wrapper{
+    color: white;
+    background-color: black;
+}
+
+.cart-icon{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
