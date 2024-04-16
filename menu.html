@@ -1,18 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>LostinDaSauce</title>
     <link rel="stylesheet" href="index.css"><!----css stylesheet link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!---awesome-font link-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--aos animation library link-->
     <link rel="icon" href="images/logo.jpg">
+
+
 </head>
 <body>
     <div class="container" id="index-container">
-        <section>
+        <!---home section-->
+        <section id="">
             <nav class="navbar">
                 <div class="logo-icon">
                     <!---logo-img-->
@@ -60,6 +62,10 @@
                 </ul>
             </div>
 
+            
+        </section><!---home section end-->
+
+
         <section id="menu">
             <div class="menu-wrapper">
                 <div class="menu-title">
@@ -72,315 +78,237 @@
                     <li>Sliders</li>
                     <li>Wings</li>
                 </div>
-            <div class="menu-items">
-                <div class="menu-items-grid">
-                    <div class="item1 item">
-                        <div class="item-wrapper">
+            </div>
+            <div class="menu-item-wrapper">
+                <div class="grid-wrapper">
+                    <div class="items-grid">
+                        <div class="item1 item-card"><!---item1-->
                             <div class="item-img">
-                                <!--img goes here-->
-                                <img src="images/cheese-fries.webp" alt="">
+                                <img src="images/french-fries.png" alt="icon">
                             </div>
-                            <div class="item-description">
+                            <div class="item-wrapper">
                                 <div class="item-name">
-                                    <h2>Cheese Fries</h2>
+                                    <h3>French Fries</h3>
                                 </div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aliquid esse incidunt quasi 
-                                </p>
-                            </div>
-                            <div class="prize-cart">
-                                <div class="prize">
-                                    <p>7$</p>
+                                <div class="item-desc">
+                                    <p>This French fries recipe is made using a clever, proven cooking method that guarantees crispy fries</p>
                                 </div>
-                                <div class="item-amount">
-                                    <select name="item-amount" id="">
-                                        <option value="one">1</option>
-                                        <option value="two">2</option>
-                                        <option value="three">3</option>
-                                        <option value="four">4</option>
-                                    </select>
+                            </div><!---item-wrapper end-->
+                            <div class="price-cart">
+                                <div class="price-calories">
+                                    <p>$5.00 | <span class="calories"></span></p>
                                 </div>
-                                <div class="cart-icon">
-                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
                                 </div>
                             </div>
-                        </div>
-                    </div><!---item 1 end-->
+                        </div><!---item 1 end-->
 
 
-                <div class="item2 item">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <!--img goes here-->
-                            <img src="images/sliders.jpeg" alt="sliders">
-                        </div>
-                        <div class="item-description">
-                            <div class="item-name">
-                                <h2>Cheese Sliders</h2>
+                        <div class="item2 item-card"><!---item2-->
+                            <div class="item-img">
+                                <img src="images/cheese pizza.png" alt="icon">
                             </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aliquid esse incidunt quasi 
-                            </p>
-                        </div>
-                        <div class="prize-cart">
-                            <div class="prize">
-                                <p>10$</p>
+                            <div class="item-wrapper">
+                                <div class="item-name">
+                                    <h3>Cheese Pizza</h3>
+                                </div>
+                                <div class="item-desc">
+                                    <p>This classic cheese pizza recipe makes a chewy crust, homemade tomato sauce, and three different types of cheese.</p>
+                                </div>
+                            </div><!---item-wrapper end-->
+                            <div class="price-cart">
+                                <div class="price-calories">
+                                    <p>$10.00 | <span class="calories"></span></p>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
                             </div>
-                            <div class="item-amount">
-                                <select name="item-amount" id="">
-                                    <option value="one">1</option>
-                                    <option value="two">2</option>
-                                    <option value="three">3</option>
-                                    <option value="four">4</option>
-                                </select>
+                        </div><!---item 2 end-->
+
+
+                        <div class="item3 item-card"><!---item3-->
+                            <div class="item-img">
+                                <img src="images/veggie-pizza.png" alt="icon">
                             </div>
-                            <div class="cart-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <div class="item-wrapper">
+                                <div class="item-name">
+                                    <h3>veggie Pizza</h3>
+                                </div>
+                                <div class="item-desc">
+                                    <p>This veggie pizza is made from crescent-roll dough and a cream cheesy spread for an easy, fresh take on a favorite</p>
+                                </div>
+                            </div><!---item-wrapper end-->
+                            <div class="price-cart">
+                                <div class="price-calories">
+                                    <p>$10.00 |  <span class="calories"></span></p>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div><!---item 2 end-->
+                        </div><!---item 3end-->
+
+
+                        <div class="item4 item-card"><!---item4-->
+                            <div class="item-img">
+                                <img src="images/double-burger.jpeg" alt="icon">
+                            </div>
+                            <div class="item-wrapper">
+                                <div class="item-name">
+                                    <h3>veggie Pizza</h3>
+                                </div>
+                                <div class="item-desc">
+                                    <p>This veggie pizza is made from crescent-roll dough and a cream cheesy spread for an easy, fresh take on a favorite</p>
+                                </div>
+                            </div><!---item-wrapper end-->
+                            <div class="price-cart">
+                                <div class="price-calories">
+                                    <p>$15.00 | <span class="calories"></span></p>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                        </div><!---item 4end-->
+
+
+                        <div class="item1 item-card"><!---item1-->
+                            <div class="item-img">
+                                <img src="images/french-fries.png" alt="icon">
+                            </div>
+                            <div class="item-wrapper">
+                                <div class="item-name">
+                                    <h3>French Fries</h3>
+                                </div>
+                                <div class="item-desc">
+                                    <p>This French fries recipe is made using a clever, proven cooking method that guarantees crispy fries</p>
+                                </div>
+                            </div><!---item-wrapper end-->
+                            <div class="price-cart">
+                                <div class="price-calories">
+                                    <p>$5.00 | <span class="calories"></span></p>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                        </div><!---item 1 end-->
 
 
 
-                <div class="item3 item">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <!--img goes here-->
-                            <img src="images/wings.jpeg" alt="wings">
-                        </div>
-                        <div class="item-description">
-                            <div class="item-name">
-                                <h2>Chicken Wings</h2>
+
+                        <div class="item1 item-card"><!---item1-->
+                            <div class="item-img">
+                                <img src="images/french-fries.png" alt="icon">
                             </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aliquid esse incidunt quasi 
-                            </p>
-                        </div>
-                        <div class="prize-cart">
-                            <div class="prize">
-                                <p>20$</p>
+                            <div class="item-wrapper">
+                                <div class="item-name">
+                                    <h3>French Fries</h3>
+                                </div>
+                                <div class="item-desc">
+                                    <p>This French fries recipe is made using a clever, proven cooking method that guarantees crispy fries</p>
+                                </div>
+                            </div><!---item-wrapper end-->
+                            <div class="price-cart">
+                                <div class="price-calories">
+                                    <p>$5.00 | <span class="calories"></span></p>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
                             </div>
-                            <div class="item-amount">
-                                <select name="wings-amount" id="">
-                                    <option value="6piece">6piece</option>
-                                    <option value="12piece">12piece</option>
-                                    <option value="18piece">18piece</option>
-                                    <option value="24piece">24piece</option>
-                                </select>
-                            </div>
-                            <div class="cart-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div><!---item 3 end-->
+                        </div><!---item 1 end-->
 
 
 
-                <div class="item4 item">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <!--img goes here-->
-                            <img src="images/burger.webp" alt="burger">
-                        </div>
-                        <div class="item-description">
-                            <div class="item-name">
-                                <h2>Cheese Burger</h2>
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aliquid esse incidunt quasi 
-                            </p>
-                        </div>
-                        <div class="prize-cart">
-                            <div class="prize">
-                                <p>7$</p>
-                            </div>
-                            <div class="item-amount">
-                                <select name="item-amount" id="">
-                                    <option value="one">1</option>
-                                    <option value="two">2</option>
-                                    <option value="three">3</option>
-                                    <option value="four">4</option>
-                                </select>
-                            </div>
-                            <div class="cart-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div><!---item 4 end-->
-                <div class="item5 item">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <!--img goes here-->
-                            <img src="images/double-burger.jpeg" alt="burger">
-                        </div>
-                        <div class="item-description">
-                            <div class="item-name">
-                                <h2>Double Burger</h2>
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aliquid esse incidunt quasi 
-                            </p>
-                        </div>
-                        <div class="prize-cart">
-                            <div class="prize">
-                                <p>20$</p>
-                            </div>
-                            <div class="item-amount">
-                                <select name="item-amount" id="">
-                                    <option value="one">1</option>
-                                    <option value="two">2</option>
-                                    <option value="three">3</option>
-                                    <option value="four">4</option>
-                                </select>
-                            </div>
-                            <div class="cart-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div><!---item 5 end-->
-                
-                
-                <div class="item6 item">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <!--img goes here-->
-                            <img src="images/tasty-burger.png" alt="burger">
-                        </div>
-                        <div class="item-description">
-                            <div class="item-name">
-                                <h2>Tasty Burger</h2>
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aliquid esse incidunt quasi 
-                            </p>
-                        </div>
-                        <div class="prize-cart">
-                            <div class="prize">
-                                <p>15$</p>
-                            </div>
-                            <div class="item-amount">
-                                <select name="item-amount" id="">
-                                    <option value="one">1</option>
-                                    <option value="two">2</option>
-                                    <option value="three">3</option>
-                                    <option value="four">4</option>
-                                </select>
-                            </div>
-                            <div class="cart-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div><!---item 6 end-->
-                
-                
-                <div class="item7 item">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <!--img goes here-->
-                            <img src="images/french-fries.png" alt="fries">
-                        </div>
-                        <div class="item-description">
-                            <div class="item-name">
-                                <h2>French Fries</h2>
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aliquid esse incidunt quasi 
-                            </p>
-                        </div>
-                        <div class="prize-cart">
-                            <div class="prize">
-                                <p>5$</p>
-                            </div>
-                            <div class="item-amount">
-                                <select name="item-amount" id="">
-                                    <option value="one">1</option>
-                                    <option value="two">2</option>
-                                    <option value="three">3</option>
-                                    <option value="four">4</option>
-                                </select>
-                            </div>
-                            <div class="cart-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div><!---item 7 end-->
-                
-                
-                
-                <div class="item8 item">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <!--img goes here-->
-                            <img src="images/veggie-pizza.png" alt="pizza">
-                        </div>
-                        <div class="item-description">
-                            <div class="item-name">
-                                <h2>Veggie Pizza</h2>
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aliquid esse incidunt quasi 
-                            </p>
-                        </div>
-                        <div class="prize-cart">
-                            <div class="prize">
-                                <p>10$</p>
-                            </div>
-                            <div class="item-amount">
-                                <select name="slice-amount" id="">
-                                    <option value="one-slice">1slice</option>
-                                    <option value="two-slice">2slices</option>
-                                    <option value="three-slice">3slices</option>
-                                    <option value="four-slice">4slices</option>
-                                </select>
-                            </div>
-                            <div class="cart-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div><!---item 8 end-->
-                
-                
-                <div class="item9 item">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <!--img goes here-->
-                            <img src="images/cheese pizza.png" alt="pizza">
-                        </div>
-                        <div class="item-description">
-                            <div class="item-name">
-                                <h2>Cheese Pizza</h2>
-                            </div>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit aliquid esse incidunt quasi 
-                            </p>
-                        </div>
-                        <div class="prize-cart">
-                            <div class="prize">
-                                <p>17$</p>
-                            </div>
-                            <div class="item-amount">
-                                <select name="slice-amount" id="">
-                                    <option value="one-slice">1slice</option>
-                                    <option value="two-slice">2slices</option>
-                                    <option value="three-slice">3slices</option>
-                                    <option value="four-slice">4slices</option>
-                                </select>
-                            </div>
-                            <div class="cart-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div><!---item 9 end-->
 
-                
-            </div><!---grid end-->
+
+                        <div class="item1 item-card"><!---item1-->
+                            <div class="item-img">
+                                <img src="images/french-fries.png" alt="icon">
+                            </div>
+                            <div class="item-wrapper">
+                                <div class="item-name">
+                                    <h3>French Fries</h3>
+                                </div>
+                                <div class="item-desc">
+                                    <p>This French fries recipe is made using a clever, proven cooking method that guarantees crispy fries</p>
+                                </div>
+                            </div><!---item-wrapper end-->
+                            <div class="price-cart">
+                                <div class="price-calories">
+                                    <p>$5.00 | <span class="calories"></span></p>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                        </div><!---item 1 end-->
+
+
+
+
+                        <div class="item1 item-card"><!---item1-->
+                            <div class="item-img">
+                                <img src="images/french-fries.png" alt="icon">
+                            </div>
+                            <div class="item-wrapper">
+                                <div class="item-name">
+                                    <h3>French Fries</h3>
+                                </div>
+                                <div class="item-desc">
+                                    <p>This French fries recipe is made using a clever, proven cooking method that guarantees crispy fries</p>
+                                </div>
+                            </div><!---item-wrapper end-->
+                            <div class="price-cart">
+                                <div class="price-calories">
+                                    <p>$5.00 | <span class="calories"></span></p>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                        </div><!---item 1 end-->
+
+
+
+
+                        <div class="item1 item-card"><!---item1-->
+                            <div class="item-img">
+                                <img src="images/french-fries.png" alt="icon">
+                            </div>
+                            <div class="item-wrapper">
+                                <div class="item-name">
+                                    <h3>French Fries</h3>
+                                </div>
+                                <div class="item-desc">
+                                    <p>This French fries recipe is made using a clever, proven cooking method that guarantees crispy fries</p>
+                                </div>
+                            </div><!---item-wrapper end-->
+                            <div class="price-cart">
+                                <div class="price-calories">
+                                    <p>$5.00 | <span class="calories"></span></p>
+                                </div>
+                                <div class="cart-btn">
+                                    <button>Add To Cart</button>
+                                </div>
+                            </div>
+                        </div><!---item 1 end-->
+
+
+                    </div><!---grid end-->
+                    
+                </div>
+            </div>
             
-        </div><!---menu-items end-->
-    </div><!--menu-wrapper end-->
-</section><!---menu section end-->
-    </div>
+        </section><!-----menu section end-->
+
+
+
+    </div><!---container end-->
     
-
-
 
 
 
@@ -388,7 +316,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aos animation script-->
     <script>
         AOS.init(); //initialize aos library
-    </script>
-    <!----bootstrap links-->
+      </script>
+      <!----bootstrap links-->
+      
 </body>
 </html>
