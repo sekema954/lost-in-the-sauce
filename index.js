@@ -11,3 +11,24 @@ function menuClicked(){
     })
 }
 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuOptions = document.querySelectorAll('.menu-options li');
+    const items = document.querySelectorAll('.item-card');
+
+    menuOptions.forEach(option => {
+        option.addEventListener('click', function () {
+            const itemType = this.textContent.trim().toLowerCase();
+
+            items.forEach(item => {
+                if (item.classList.contains(`item-${itemType}`)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
